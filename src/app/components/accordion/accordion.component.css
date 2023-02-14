@@ -1,0 +1,33 @@
+mat-accordion{
+    display: inline-block;
+    width: 400px;
+    box-shadow: none;
+}
+mat-panel-title{
+    font-weight: 400;
+}
+.mat-expansion-panel{
+    box-shadow: none;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-radius: 0;
+}
+.mat-expansion-panel:last-child{
+    border-bottom: none;
+}
+mat-expansion-panel-header:hover mat-panel-title{
+    color: orange;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1000px){
+    mat-accordion {
+            display: inline-block;
+            width: 100%;
+            box-shadow: none;
+            justify-self: center;
+        }
+}

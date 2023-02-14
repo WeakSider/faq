@@ -1,0 +1,14 @@
+<mat-accordion>
+  <mat-expansion-panel
+    *ngFor="let question of questions"
+    (opened)="question.panelOpenState = true"
+    (closed)="question.panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title [ngClass]="{ bold: question.panelOpenState }">
+        {{ question.question }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{ question.info }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
